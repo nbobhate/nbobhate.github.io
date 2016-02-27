@@ -1,2 +1,3 @@
 name: Nikitah Bobhate
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
