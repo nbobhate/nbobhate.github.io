@@ -6,3 +6,12 @@ title: All the things
 	<h1>All the Things</h1>
 	<p>A small collection of thoughts</p>
 </div><!-- /.blurb -->
+
+{% for post in site.posts %}
+  {% if forloop.index < 11 %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.content }}
+  {% else %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  {% endif %}
+{% endfor %}
