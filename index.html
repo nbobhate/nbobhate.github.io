@@ -6,3 +6,7 @@ title: All the things
 	<h1>All the Things</h1>
 	<p>A small collection of thoughts</p>
 </div><!-- /.blurb -->
+
+{% for post in site.posts limit:1 %}
+	<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+{% endfor %}
