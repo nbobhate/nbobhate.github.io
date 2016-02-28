@@ -21,7 +21,7 @@ title: Sorted by tag
       {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
       <li>
         <a href="#{{ this_word | cgi_escape }}" class="tag">
-          {{ this_word }} == {{ site.tags.size }}
+          {{ this_word }} == {{ site.tags.size }} / {{ tag_word.size }}
         </a>
       </li>
     {% endunless %}
