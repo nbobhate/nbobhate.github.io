@@ -1,3 +1,23 @@
-name: Nikitah Bobhate
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+# Dependencies
+gems:             [jekyll-paginate, jekyll-gist]
+markdown:         kramdown
+# highlighter:      pygments
+
+# Settings
+permalink:        pretty
+paginate:         3
+excerpt_separator: "<!--more-->"
+
+# Site Metadata
+title:            all the things
+# tagline:          'Title tagline'
+description:      'Some stuff about stuff.'
+url:              http://nbobhate.github.io
+baseurl:          /
+author:
+  name:           'Nikitah Bobhate'
+  url:            http://nbobhate.github.io
+
+version:          2.1.0
+github:
+  repo:           https://github.com/nbobhate

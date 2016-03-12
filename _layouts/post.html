@@ -2,19 +2,41 @@
 layout: default
 ---
 
-<!-- Tags -->
-<ul class="tags">
-    {% for tag in page.tags %}
-      <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-    {% endfor %}
-</ul>
-
-<!-- Post -->
 <div class="post">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
-
-  <div class="post">
-    {{ content }}
-  </div>
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
 </div>
+
+<div class="related">
+  <h2>Related...</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!--
+For more accurate recent posts:
+http://stackoverflow.com/questions/10906574/filter-site-related-posts-in-jekyll
+
+{% for post in site.related_posts limit:5 %}
+  {% assign match = false %}
+  {% for category in post.categories %}
+    {% if page.categories contains category %}
+      {% assign match = true %}
+    {% endif %}
+  {% endfor %}
+  {% if match %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+-->
