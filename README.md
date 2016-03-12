@@ -13,3 +13,4 @@
 - http://blog.bemycto.com/toolbox/2015-05-30/building-blog-jekyll-5-points-part-3/
 - http://jmcglone.com/guides/github-pages/
 - http://www.lipsum.com/feed/html
+- http://ricostacruz.com/cheatsheets/jekyll.html
