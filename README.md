@@ -1,10 +1,8 @@
 # nbobhate.github.io
 
 ### Still to do...
-- Tags or categories
 - About page
 - Post layout
-- Potentially edit the formatting and theme copying this: http://daktilo.github.io/
 
 ### Helpful links
 - https://jekyllrb.com/docs/
