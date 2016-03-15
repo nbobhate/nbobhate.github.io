@@ -3,6 +3,7 @@
 ### Still to do...
 - About page
 - Post layout
+- Maybe add Bootstrap...
 
 ### Helpful links
 - https://jekyllrb.com/docs/
