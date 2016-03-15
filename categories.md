@@ -24,3 +24,5 @@ title: Categories
   </ul>
   {% endunless %}{% endfor %}
 </div>
+
+<!-- http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
