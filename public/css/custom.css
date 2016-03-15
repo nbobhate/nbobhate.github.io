@@ -64,7 +64,8 @@
 }
 
 .tag-box a {
-		background-color: #e6e6e6;
+		background-color: #202020;
+		color: #fff;
     padding: 4px 6px;
     margin: 2px;
     text-decoration: none;
