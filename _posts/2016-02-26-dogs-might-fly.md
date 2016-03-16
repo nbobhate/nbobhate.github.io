@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Is Dogs Might Fly the daftest talent show of all time?
+published: true
 tags: [dogs,fun]
 ---
 
