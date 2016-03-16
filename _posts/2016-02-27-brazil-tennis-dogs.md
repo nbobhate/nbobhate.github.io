@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ball dogs show their stuff at Brazil tennis exhibition
+published: true
 tags: [dogs,fun]
 ---
 
