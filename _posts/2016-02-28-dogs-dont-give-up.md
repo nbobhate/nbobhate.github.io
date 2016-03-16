@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dogs Don’t Give Up. Neither Should We
+published: true
 tags: [dogs,serious]
 ---
 
