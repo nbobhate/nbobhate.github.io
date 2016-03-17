@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sicklefin redhorse becomes a fish worth saving
-published: false
+published: true
 tags: [fish,serious]
 ---
 
