@@ -3,7 +3,8 @@
 ### Still to do...
 - About page
 - Post layout
-- Maybe add Bootstrap...
+- Make use of Bootstrap
+- Get a favicon
 
 ### Helpful links
 - https://jekyllrb.com/docs/

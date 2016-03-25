@@ -11,7 +11,7 @@ excerpt_separator: "<!--more-->"
 # Site Metadata
 title:            all the things
 # tagline:          'Title tagline'
-description:      'Some stuff about stuff.'
+# description:      'Some stuff about stuff.'
 url:              http://nbobhate.github.io
 baseurl:          /
 author:
