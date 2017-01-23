@@ -5,7 +5,7 @@ highlighter:      rouge
 
 # Settings
 permalink:        pretty
-paginate:         3
+paginate:         10
 excerpt_separator: "<!--more-->"
 
 # Site Metadata
