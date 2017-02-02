@@ -6,7 +6,7 @@ highlighter:      rouge
 # Settings
 permalink:        pretty
 paginate:         10
-excerpt_separator: "<!--more-->"
+excerpt_separator: "<!--more-->" # this is currently not being used :(
 
 # Site Metadata
 title:            all the things
