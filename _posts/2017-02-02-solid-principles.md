@@ -10,7 +10,7 @@ The SOLID principles define five basic OOP best practises. These are quite a pop
 Each principle is defined in its own article:
 
 1. [Single Responsibility Principle]({% post_url 2017-02-02-single-responsibility %})
-2. Open Closed Principle
+2. [Open-Closed Principle]({% post_url 2017-02-06-open-close %})
 3. Liskov Substitution Principle
 4. Interface Segregation Principle
 5. Dependency Inversion Principle
