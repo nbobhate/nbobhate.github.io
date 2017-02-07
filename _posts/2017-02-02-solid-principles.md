@@ -5,7 +5,7 @@ published: true
 tags: [Best Practises]
 ---
 
-The SOLID principles define five basic OOP best practises. These are quite a popular interview question, but besides that, are a very important for developers to bear in mind.<!--more-->
+The SOLID principles define five basic OOP best practises. These are quite a popular interview question, but besides that, these are very important for developers to bear in mind. They contribute to the design and maintainability of software applications.<!--more-->
 
 Each principle is defined in its own article:
 
@@ -13,4 +13,4 @@ Each principle is defined in its own article:
 2. [Open-Closed Principle]({% post_url 2017-02-06-open-close %})
 3. Liskov Substitution Principle
 4. Interface Segregation Principle
-5. Dependency Inversion Principle
+5. [Dependency Inversion Principle]({% post_url 2017-02-07-dependency-inversion %})
