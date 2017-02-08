@@ -11,6 +11,6 @@ Each principle is defined in its own article:
 
 1. [Single Responsibility Principle]({% post_url 2017-02-02-single-responsibility %})
 2. [Open-Closed Principle]({% post_url 2017-02-06-open-close %})
-3. Liskov Substitution Principle
+3. [Liskov Substitution Principle]({% post_url 2017-02-08-liskov-substitution %})
 4. Interface Segregation Principle
 5. [Dependency Inversion Principle]({% post_url 2017-02-07-dependency-inversion %})
