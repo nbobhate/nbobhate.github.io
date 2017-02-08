@@ -12,6 +12,7 @@ This principle states that in software design, high level modules should not dep
 Rather, both should depend on *abstractions*. Abstractions are not tied down by the details of the implementation, but rather should drive the implementation process by providing *contracts* that subclasses must adhere to. These contracts are less prone to change once they are defined. Abstractions in Java can be realised by the use of `abstract` or `interface` classes.
 
 Lets look at some code. For this example, we have a manufacturing factory that produces various devices. All these devices go through the same steps:
+
 - Assembly
 - Testing
 - Packaging
