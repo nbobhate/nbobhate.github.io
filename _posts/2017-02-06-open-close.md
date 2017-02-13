@@ -9,7 +9,7 @@ The Open-Closed Principle is the second principle making up the [SOLID Principle
 
 This principle states that software modules, whether methods or classes, should be open for extension, but closed for modification. Basically, changes to existing software should cause minimal (if any) changes to already working and tested code. If developers are constantly updating existing code and thereby tests, to cater for changing requirements then the overall design is considered fragile.
 
-For example, let's say that we have an `Instument` class. From this we can create subclasses `Violin` and `Flute`.
+For example, let's say that we have an `Instrument` class. From this we can create subclasses `Violin` and `Flute`.
 {% highlight java %}
 public class Instrument {
   private String name;
