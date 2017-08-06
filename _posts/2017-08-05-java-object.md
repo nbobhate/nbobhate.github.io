@@ -7,12 +7,12 @@ tags: [Java]
 
 Every object whether an exception, array or something you've created yourself extends from `java.lang.Object`. The following methods are therefore common to all objects you use or create.
 
-`String toString()`
+### `String toString()`
 
 This method allows you to view the string representation of a class. For example, if you pass an object reference into the `System.out.println()` method, it invokes that object's `toString()` method and prints a string that will look something like "ObjectName@a0f48bc". This isn't terribly helpful so you would usually override the `toString()` method in your class to return a value that is meaningful to know about that object. The most common use of overriding this method is to display the current state of, or values held by, the instance variables.
 
 
-`boolean equals(Object o)`
+### `boolean equals(Object o)`
 
 Objects can be compared in two ways: by using the `==` operation or by invoking the `equals()` method. The `==` operation compares the value of each object reference, and returns true if they are equal (so they're pointing to the same object).
 
@@ -42,7 +42,7 @@ Certain rules need to be adhered to when overriding the `equals()` method. This 
 - If two objects are considered equal with the `equals()` method, then they must have identical hashcode values
 
 
-`int hashCode()`
+### `int hashCode()`
 
 HashCodes are used to increase the performance of large collections to determine how an object should be stored and later located. They are used as object identifiers, but it is important to note that hashcodes are not necessarily unique.
 
@@ -68,13 +68,13 @@ There is also a hashCode() contract:
 When serializing objects, some values can be lost. These `transient` variables will not deserialize correctly and will cause unexpected results when included in the `equals()` and `hashCode()` methods. Avoid using `transient` variables in determining `equals()` and `hashCode()`.
 
 
-`void finalize()`
+### `void finalize()`
 
 
-`final void notify()`
+### `final void notify()`
 
 
-`final void notifyAll()`
+### `final void notifyAll()`
 
 
-`final void wait()`
+### `final void wait()`
