@@ -9,7 +9,7 @@ The Single Responsibility Principle is pretty self explanatory, but can be the o
 
 In essence this principle states that a class should only be able to perform actions that it is directly responsible for. Sounds pretty obvoious but this distinction does get a bit blurry. The key is to always bear in mind the purpose of your class.
 
-For example, let's say we have an `Book` class. We have some operations that we want to perform with `Book`.
+For example, let's say we have a `Book` class. We have some operations that we want to perform with `Book`.
 {% highlight java %}
 public class Book {
 
@@ -87,7 +87,7 @@ public static void main(String[] args) {
 }
 {% endhighlight %}
 
-Similarly, we can remove the saveing responsibility from the `Book` class and create specific classes that handle this operations.
+Similarly, we can remove the saving responsibility from the `Book` class and create a specific class that handles this operation.
 {% highlight java %}
 public class SimpleFilePersistance {
   public void save(Book book) {

@@ -104,7 +104,7 @@ public abstract class ManufacturingProcess {
 
 Incidentally, the `launch()` method is an example of applying the Template pattern.
 
-This allows the manufacturer to disregard the concrete types during the manufacturing process, and rather depends on the contract provided by the abstraction. Note that in this case, we have defined all of our process-related classes in a different package, and the methods defined in `ManufacturingProcess` are defined as `protected`. This measn that the instance of `ManufacturingProcess` deinfed in `Factory` only has access to the `launch()` method. Now the manufacturer doesn't need to know the details about each device's manufacturing process. They can simply invoke the process!
+This allows the manufacturer to disregard the concrete types during the manufacturing process, and rather depends on the contract provided by the abstraction. Note that in this case, we have defined all of our process-related classes in a different package, and the methods defined in `ManufacturingProcess` are defined as `protected`. This measn that the instance of `ManufacturingProcess` defined in `Factory` only has access to the `launch()` method. Now the manufacturer doesn't need to know the details about each device's manufacturing process. They can simply invoke the process!
 {% highlight java %}
 package clients;
 public class Factory {
