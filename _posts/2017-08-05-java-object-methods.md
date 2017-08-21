@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Noteworthy Methods in Object"
-published: true
+published: false
 tags: [Java]
 ---
 
