@@ -3,35 +3,30 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="catalogue">
   {% for post in paginator.posts %}
-	  <div class="post">
-			<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	    <span class="post-date">{{ post.date | date_to_string }}</span>
-	    <!--	<p>{{ post.excerpt }}<a href="{{ post.url }}">More...</a></p> -->
-		  <p>{{ post.content | strip_html | truncatewords:50 }} <a style="font-style: italic" href="{{ post.url }}">more</a>.</p>
-	  </div>
+    <a href="{{ post.url | prepend: site.url }}" class="catalogue-item">
+      <div>
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          {{ post.content | truncatewords: 50 | strip_html }}
+        </p>
+
+      </div>
+    </a>
   {% endfor %}
 </div>
 
-<hr>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.url }}" class="right arrow">&#8594;</a>
+  {% endif %}
 
-<nav class="pagination" role="navigation">
-	{% if paginator.previous_page %}
-		{% if paginator.previous_page == 1 %}
-			<a class="newer-posts" href="{{ site.baseurl }}">Newer</a>
-		{% else %}
-	    <a class="newer-posts" href="{{ site.baseurl }}page{{ paginator.previous_page }}">Newer</a>
-		{% endif %}
-	{% else %}
-    <span class="newer-posts faded">Newer</span>
-	{% endif %}
-
-	<!--span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span-->
-
-	{% if paginator.next_page %}
-		<a class="older-posts" href="{{ site.baseurl }}page{{ paginator.next_page }}/">Older</a>
-	{% else %}
-		<span class="older-posts faded">Older</span>
-	{% endif %}
-</nav>
+  <span>{{ paginator.page }}</span>
+</div>

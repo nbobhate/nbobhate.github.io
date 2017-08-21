@@ -1,6 +1,7 @@
 ---
-layout: page
-title: About
+layout: post
+title: "About"
+permalink: /about/
 ---
 
-This blog serves as a collection of allthe things I can't always remember.
+Pending...

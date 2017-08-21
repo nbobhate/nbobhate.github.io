@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Being an Object
+title: "Noteworthy Methods in Object"
 published: true
 tags: [Java]
 ---

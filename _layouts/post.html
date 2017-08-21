@@ -3,64 +3,34 @@ layout: default
 ---
 
 <div class="post">
+  <div class="post-info">
+    {% if page.date %}
+      <br>
+      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </div>
+
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <div class="post-line"></div>
+
   {{ content }}
 
-  <hr>
-  {% assign tag_words = page.tags | remove: '[' | remove: ']' | remove: '"' | split:',' | sort %}
-  <ul class="tag-box inline">
-  {% for item in (0..page.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <li><a href="{{ this_word | cgi_escape }}"> {{ this_word }} </a></li>
-  {% endunless %}{% endfor %}
-  </ul>
 </div>
 
+<div class="tags">
+  {% for item in (0..page.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ page.tags[item] | strip_newlines }}{% endcapture %}
+    <a href="{{ '/categories#' | prepend: site.url }}{{ this_word }}/" class="top"> {{ this_word }} </a>
+  {% endunless %}{% endfor %}
+</div>
 
-
-<!-- <h3>Related post</h3>
-{% assign listed_posts_urls = page.url | split: ' ' %}
-{% for tag in page.tags %}
-  {% for mypost in site.tags[tag] %}
-    {% if listed_posts_urls contains mypost.url %}
-    {% else %}
-      <div>
-        <h5><a href="{{ mypost.url }}">{{ mypost.title }}</a></h5>
-      </div>
-      {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
-    {% endif %}
-  {% endfor %}
-{% endfor %} -->
-
-<!-- <div class="related">
-  <h2>Related...</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div> -->
-
-<!--
-For more accurate recent posts:
-http://stackoverflow.com/questions/10906574/filter-site-related-posts-in-jekyll
--->
-<!-- {% for post in site.related_posts limit:5 %}
-  {% assign match = false %}
-  {% for category in post.categories %}
-    {% if page.categories contains category %}
-      {% assign match = true %}
-    {% endif %}
-  {% endfor %}
-  {% if match %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.url }}" class="left arrow">&#8592;</a>
   {% endif %}
-{% endfor %} -->
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.url }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
+</div>

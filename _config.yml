@@ -1,23 +1,30 @@
-# Dependencies
-gems:             [jekyll-paginate, jekyll-gist]
-markdown:         kramdown
-highlighter:      rouge
+# Permalinks
+permalink:      /:year-:month-:day/:title
 
-# Settings
-permalink:        pretty
-paginate:         3
-excerpt_separator: "<!--more-->" # this is currently not being used :(
+# Setup
+title:          all the things
+paginate:       5
+baseurl:        ""
+url:            "http://nbobhate.github.io"
 
-# Site Metadata
-title:            all the things
-# tagline:          'Title tagline'
-# description:      'Some stuff about stuff.'
-url:              http://nbobhate.github.io
-baseurl:          /
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
 author:
-  name:           'Nikitah Bobhate'
-  url:            http://nbobhate.github.io
+  name:         Nikitah Bobhate
+  url:          http://nbobhate.github.io
 
-version:          2.1.0
+# Custom vars
+version:        3.0.0
 github:
-  repo:           https://github.com/nbobhate
+  repo:         https://github.com/nbobhate
+
+# Gems
+gems:
+  - jekyll-paginate

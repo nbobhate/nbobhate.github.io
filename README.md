@@ -1,10 +1,13 @@
-# nbobhate.github.io
+### nbobhate.github.io
+Can be found at http://nbobhate.github.io
 
 ### Still to do...
 - About page
-- Post layout
-- Make use of Bootstrap
 - Get a favicon
+- Get contact icons
+- Link top headings properly when in post view
+- Create in-page linking
+- Figure out how to display table
 
 ### Helpful links
 - https://jekyllrb.com/docs/
@@ -15,3 +18,4 @@
 - http://jmcglone.com/guides/github-pages/
 - http://www.lipsum.com/feed/html
 - http://ricostacruz.com/cheatsheets/jekyll.html
+- http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html

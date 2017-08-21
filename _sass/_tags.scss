@@ -1,0 +1,23 @@
+.tags {
+  font-family: $palatino;
+  padding-bottom: 2rem;
+  position: relative;
+  font-style: italic;
+
+  span {
+    color: $default-shade;
+    font-size: 1.1rem;
+  }
+
+  .top {
+    @include transition(all .3s ease-out);
+    color: $default-color;
+    font-family: $sans-font;
+    font-size: 1.1rem;
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
