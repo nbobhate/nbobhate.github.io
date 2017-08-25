@@ -7,6 +7,22 @@ tags: [Cat2]
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.
 
+# Tables
+
+|-----------------+--------------+----------------+----------------|
+| Default aligned | Left aligned | Center aligned | Right aligned  |
+|-----------------|--------------|----------------|----------------|
+| First body part | Second cell  | Third cell     | fourth cell    |
+| Second line     | foo          | **strong**     | baz            |
+| Third line      | quux         | baz            | bar            |
+|-----------------+--------------+----------------+----------------|
+| Second body     |              |                |                |
+| 2 line          |              |                |                |
+|=================+==============+================+================|
+| Footer row      |              |                |                |
+|-----------------+--------------+----------------+----------------|
+
+
 # Headers
 {% highlight markdown %}
 # H1

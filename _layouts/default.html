@@ -6,13 +6,13 @@
   <body>
     <nav class="nav">
       <div class="nav-container">
-        <a href="{{ site.baseurl }}/">
-          {% if page.title == "Home" %}
-            <h2 class="nav-title">{{ site.title }}</h2>
-          {% else %}
-            <h2 class="nav-title">{{ site.title }}  &middot; {{ page.title }}</h2>
-          {% endif %}
-        </a>
+        {% if page.title == "Home" %}
+          <a href="{{ site.baseurl }}/"><h2 class="nav-title">{{ site.title }}</h2></a>
+        {% else %}
+          <a href="{{ site.baseurl }}/"><h2 class="nav-title">{{ site.title }}</h2></a>
+          <h2 class="nav-title">  &middot; </h2>
+          <a href="{{ page.url | prepend: site.url }}"><h2 class="nav-title">{{ page.title }}</h2></a>
+        {% endif %}
         <ul>
           <li><a href="{{ '/about' | prepend: site.url }}">about</a></li>
           <li><a href="{{ '/categories' | prepend: site.url }}/">categories</a></li>

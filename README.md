@@ -2,12 +2,13 @@
 Can be found at http://nbobhate.github.io
 
 ### Still to do...
-- About page
-- Get a favicon
-- Get contact icons
-- Link top headings properly when in post view
 - Create in-page linking
 - Figure out how to display table
+- Get contact icons
+  - https://github.com/konsav/social-icons
+  - https://robby-designs.deviantart.com/art/Socialcircles-Free-social-icons-circular-347921678
+  - https://github.com/Chris-Jones-Gill/Social-Dark-Glyph-Font
+- About page
 
 ### Helpful links
 - https://jekyllrb.com/docs/
@@ -19,3 +20,4 @@ Can be found at http://nbobhate.github.io
 - http://www.lipsum.com/feed/html
 - http://ricostacruz.com/cheatsheets/jekyll.html
 - http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html
+- http://gastonsanchez.com/visually-enforced/opinion/2014/02/16/Mathjax-with-jekyll/
