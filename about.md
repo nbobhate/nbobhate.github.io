@@ -4,4 +4,4 @@ title: "About"
 permalink: /about/
 ---
 
-Pending...
+This is just a small technical blog to help me keep track of all the things I learn and usually forget.

@@ -1,14 +1,7 @@
-### nbobhate.github.io
-Can be found at http://nbobhate.github.io
-
 ### Still to do...
 - Create in-page linking
 - Figure out how to display table
 - Get contact icons
-  - https://github.com/konsav/social-icons
-  - https://robby-designs.deviantart.com/art/Socialcircles-Free-social-icons-circular-347921678
-  - https://github.com/Chris-Jones-Gill/Social-Dark-Glyph-Font
-- About page
 
 ### Helpful links
 - https://jekyllrb.com/docs/
