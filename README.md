@@ -2,6 +2,8 @@
 - Create in-page linking
 - Figure out how to display table
 - Get contact icons
+- Floating header?
+- Better pagination arrows
 
 ### Helpful links
 - https://jekyllrb.com/docs/
