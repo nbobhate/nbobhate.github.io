@@ -15,7 +15,7 @@ sass:
 # Build settings
 markdown:       kramdown
 kramdown:
-  math_engine: mathjax
+  math_engine:  mathjax
 
 # About
 author:
@@ -27,6 +27,6 @@ version:        3.0.0
 github:
   repo:         https://github.com/nbobhate
 
-# Gems
-gems:
+# Dependencies
+plugins:
   - jekyll-paginate
