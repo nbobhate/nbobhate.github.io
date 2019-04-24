@@ -63,18 +63,18 @@ img {
 table {
     border-collapse: collapse;
     border-spacing: 0px;
-    border:2px solid #000000;
+    border:1px solid #aaaaaa;
+    margin: 0px auto;
 }
 
 th {
-    border:2px solid #000000;
-
+    border:1px solid #aaaaaa;
+    background-color: #f0f0f0;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 td {
-    border:1px solid #000000;
-
+    border:1px solid #aaaaaa;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 

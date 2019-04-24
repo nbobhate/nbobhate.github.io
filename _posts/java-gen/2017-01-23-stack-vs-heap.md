@@ -2,7 +2,7 @@
 layout: post
 title: Stack Memory vs Heap Memory
 published: true
-tags: [Java]
+tags: [Java Concepts]
 ---
 
 It is oftem easy to ignore what your application is doing when it gets right down to the bits and nibbles. However, having some idea of how the JVM manages memory is highly beneficial, especially when you start getting serious about low level optimisation. Of course there is a lot more to it, but here's a simplified start describing stack memory and heap memory.<!--more-->

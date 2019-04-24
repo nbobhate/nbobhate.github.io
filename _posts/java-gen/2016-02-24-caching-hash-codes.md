@@ -2,7 +2,7 @@
 layout: post
 title: Caching Hash Codes
 published: true
-tags: [Java]
+tags: [Java Concepts]
 ---
 
 In some cases you need to employ as many optimization strategies as possible to make your application perform just that much faster. I came across this small bit of optimization information and it rather blew my mind. As with most things, there is unfortunately an important caveat.<!--more-->
