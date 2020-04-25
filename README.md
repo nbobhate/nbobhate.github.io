@@ -2,7 +2,11 @@
 - Create in-page linking
 - Get contact icons
 - Floating header?
-- Better pagination arrows
+- Fix the pagination at the bottom of the screen?
+
+### Jekyll Quick Commands
+- Build the site: jekyll build
+- Serve the site: jekyll serve -watch
 
 ### Helpful links
 - https://jekyllrb.com/docs/

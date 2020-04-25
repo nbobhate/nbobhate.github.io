@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Java Collections"
-published: false
+published: true
 tags: [Java]
 ---
 

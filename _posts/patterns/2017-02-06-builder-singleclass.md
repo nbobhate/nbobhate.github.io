@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Builder with Single Class
-published: false
+published: true
 tags: [Design Patterns]
 ---
 
